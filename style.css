@@ -1,10 +1,11 @@
 body {
   margin: 0;
+  background:#676767;
   font-family:Arial,sans-serif;
 }
 
 .navbar{
-  background:#24313d;
+  background:#08092E;
   padding: 20px 40px;
   display:flex;
   justify-content:space-between;
@@ -25,5 +26,54 @@ body {
   text-decoration:none;
 }
 .nav-links a:hover{
-  color:orange;
+  color:#F3D023;
+}
+#Task1
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  max-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h2,
+.card p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card button {
+  margin: auto 20px 20px;
+  padding: 10px;
+  background: #08092E;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px ;
+}
+
+@media (max-width: 700px) {
+  .cards {
+    flex-direction: column;
+  }
 }
