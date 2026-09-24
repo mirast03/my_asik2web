@@ -1,18 +1,18 @@
 body {
   margin: 0;
-  background:#676767;
+  background:white;
   font-family:Arial,sans-serif;
 }
 
 .navbar{
-  background:#08092E;
+  background:#17252A;
   padding: 20px 40px;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
 .logo{
-  color:white;
+  color:#FEFFFF;
   font-size:24px;
   font-weight:bold;
   text-decoration:none;
@@ -22,13 +22,12 @@ body {
   gap:24px;
 }
 .nav-links a{
-  color:white;
+  color:#FEFFFF;
   text-decoration:none;
 }
 .nav-links a:hover{
   color:#F3D023;
 }
-#Task1
 main {
   max-width: 1100px;
   margin: 40px auto;
@@ -61,8 +60,8 @@ main {
 .card button {
   margin: auto 20px 20px;
   padding: 10px;
-  background: #08092E;
-  color: white;
+  background: #17252A;
+  color: #FEFFFF;
   border: none;
   cursor: pointer;
 }
@@ -75,5 +74,56 @@ main {
 @media (max-width: 700px) {
   .cards {
     flex-direction: column;
+  }
+}
+
+body.task2 {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  gap: 10px;
+  min-height: 100vh;
+  background: #17252A;
+}
+
+.task2 header {
+  grid-area: header;
+}
+
+.task2 aside {
+  grid-area: sidebar;
+  padding: 20px;
+  background: #2B7A78;
+}
+
+.task2 main {
+  grid-area: main;
+  max-width: none;
+  margin: 0;
+  padding: 20px;
+  background: #2B7A78;
+}
+
+.task2 footer {
+  grid-area: footer;
+  padding: 20px;
+  background: #17252A;
+  color: #FEFFFF;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  body.task2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
   }
 }
