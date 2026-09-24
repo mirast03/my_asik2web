@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family:Arial,sans-serif;
+}
+
+.navbar{
+  background:#24313d;
+  padding: 20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  color:white;
+  font-size:24px;
+  font-weight:bold;
+  text-decoration:none;
+}
+.nav-links{
+  display:flex;
+  gap:24px;
+}
+.nav-links a{
+  color:white;
+  text-decoration:none;
+}
+.nav-links a:hover{
+  color:orange;
+}
