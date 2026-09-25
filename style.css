@@ -216,3 +216,65 @@ body.task2 {
 .player:hover img {
   transform: scale(1.04);
 }
+
+body.task4 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f2f4f5;
+}
+
+.task4 .portfolio {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.task4 .projects,
+.task4 .portfolio-info {
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+}
+
+.task4 .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 170px;
+  padding: 18px;
+  margin-bottom: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+.task4 .project-link {
+  margin-top: auto;
+  padding: 10px 14px;
+  background: #24313d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.task4 .project-link:hover {
+  background: #3f6b73;
+}
+
+.task4 footer {
+  padding: 20px;
+  background: #24313d;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .task4 .portfolio {
+    grid-template-columns: 1fr;
+  }
+}
